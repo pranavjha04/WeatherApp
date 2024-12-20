@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherCare</title>
+  <link rel="shortcut icon" href="cloudy.png"> <!-- Link to the favicon file -->
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="nav-bar">
+          <p class="heading-54">⛅WEATHERCARE.</p>
+          <div class="search-container">
+            <input type="search" class="search-input-54 search" placeholder="Enter City Name" required />
+            <div class="loader"></div>
+            <button class="button-84 button" role="button">Search</button>
+            <p class="suggest-search">(Press Button To Search)</p>
+            <ul class="suggestion-box">
+            </ul>
+          </div>
+          <div class="temp"></div>
+        </header>
+      
+        <div class="sidebar-map-container">
+          <div class="sidebar-54">
+              <div class="info-container hidden">
+                <div class="city-weather-container">
+                  <div class="city-data-time">
+                    <h2 class="city-name">Jabalpur</h2>
+                    <p class="date-time">Monday, 16 December 2024</p>
+                  </div>
+                  <div class="icon-status-container">
+                    <img src="https://cdn.weatherapi.com/weather/128x128/night/113.png" class="weather-logo"/>
+                    <p class="weather-status">Clear</p>
+                  </div>
+                  <div class="weather-info-logo-container">
+                    <h1 class="weather-info">28</h1>
+                  </div>
+                </div>
+                
+              </div>
+
+              <button class="clear-history">Clear History</button>
+              <ul class="history">
+              </ul>
+          </div>
+          <div id="map" class="map-54"></div>
+        </div>
+      </div>
+      
+      
+</body>
+</html>
